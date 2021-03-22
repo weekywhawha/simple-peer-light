@@ -1,7 +1,7 @@
 {
   "name": "simple-peer-light",
   "description": "Simple, light-weight WebRTC video/voice and data channels",
-  "version": "1.0.0",
+  "version": "9.10.0",
   "author": {
     "name": "Gregor Mitscha-Baude",
     "email": "gregor.mitscha-baude@gmx.at"
@@ -52,7 +52,8 @@
     "build": "minify index.js --sourceType module --outFile simplepeer.min.js",
     "build-browserify": "browserify -s SimplePeer -r . | minify > simplepeer.min.js",
     "size": "npm run build && cat simplepeer.min.js | gzip | wc -c",
-    "test": "standard && npm run test-node && npm run test-browser",
+    "// test": "standard && npm run test-node && npm run test-browser",
+    "test": "standard && npm run test-node",
     "test-browser": "airtap --coverage -- test/*.js",
     "test-browser-local": "airtap --coverage --local -- test/*.js",
     "test-node": "WRTC=wrtc tape test/*.js",
