@@ -2,6 +2,7 @@
   "name": "simple-peer-light",
   "description": "Simple, light-weight WebRTC video/voice and data channels",
   "version": "9.10.0",
+  "type": "module",
   "author": {
     "name": "Gregor Mitscha-Baude",
     "email": "gregor.mitscha-baude@gmx.at"
