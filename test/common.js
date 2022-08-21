@@ -21,7 +21,7 @@ exports.getConfig = thunky(function (cb) {
 
 // For testing on node, we must provide a WebRTC implementation
 if (process.env.WRTC === 'wrtc') {
-  exports.wrtc = require('wrtc')
+  exports.wrtc = require('@koush/wrtc')
 }
 
 // create a test MediaStream with two tracks
